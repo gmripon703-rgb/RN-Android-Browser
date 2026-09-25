@@ -66,6 +66,8 @@ import com.example.browser.SearchEngine
 import com.example.data.Bookmark
 import com.example.privacy.DnsProvider
 import com.example.privacy.VpnStatus
+import com.example.ui.components.AboutDeveloperDialog
+import com.example.ui.components.DeveloperProfileCard
 import com.example.ui.theme.ElectricCyan
 import com.example.ui.theme.PrivacyIndigo
 import com.example.ui.theme.ShieldEmerald
@@ -85,6 +87,7 @@ fun StealthHomeScreen(
     modifier: Modifier = Modifier
 ) {
     var searchQuery by remember { mutableStateOf("") }
+    var showDeveloperDialog by remember { mutableStateOf(false) }
 
     LazyColumn(
         modifier = modifier
@@ -484,8 +487,20 @@ fun StealthHomeScreen(
             }
         }
 
+        // About Developer: Developed by GM Ripon
+        item {
+            Spacer(modifier = Modifier.height(8.dp))
+            DeveloperProfileCard(
+                onShowFullDialog = { showDeveloperDialog = true }
+            )
+        }
+
         item {
             Spacer(modifier = Modifier.height(40.dp))
         }
+    }
+
+    if (showDeveloperDialog) {
+        AboutDeveloperDialog(onDismissRequest = { showDeveloperDialog = false })
     }
 }

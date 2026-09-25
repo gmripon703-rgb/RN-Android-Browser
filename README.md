@@ -109,3 +109,16 @@ An ultra-lightweight, mobile-responsive, zero-telemetry Android web browser desi
 - **VPN Tunnel**: Android `VpnService` with auto-generated open-source keys
 - **Local Persistence**: Room Database (for user bookmarks only, zero activity logging)
 - **Platform Compatibility**: Android 6.0+ (API 23+) through Android 15 & 16, Mobile, Tablets, Foldables, and Google/Android TV
+
+---
+
+## Developer & Contact
+
+**Developed by GM Ripon**
+
+- **WhatsApp**: [+8801911527072](https://wa.me/8801911527072)
+- **Telegram**: [+8801911527072](https://t.me/+8801911527072)
+- **imo**: [+8801911527072](https://imo.im) / Direct contact
+- **Email**: [gmripon703@gmail.com](mailto:gmripon703@gmail.com)
+- **Direct Phone**: `+8801911527072`
+

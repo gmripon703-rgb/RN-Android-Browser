@@ -37,6 +37,10 @@ import androidx.compose.material3.SwitchDefaults
 import androidx.compose.material3.Text
 import androidx.compose.material3.rememberModalBottomSheetState
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -47,6 +51,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.browser.SearchEngine
 import com.example.browser.UserAgentOption
+import com.example.ui.components.AboutDeveloperDialog
+import com.example.ui.components.DeveloperProfileCard
 import com.example.ui.theme.ElectricCyan
 import com.example.ui.theme.PrivacyIndigo
 
@@ -68,6 +74,7 @@ fun SettingsSheet(
     onDismiss: () -> Unit
 ) {
     val sheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true)
+    var showDeveloperDialog by remember { mutableStateOf(false) }
 
     ModalBottomSheet(
         onDismissRequest = onDismiss,
@@ -423,6 +430,21 @@ fun SettingsSheet(
                 }
             }
 
+            // About Developer - Developed by GM Ripon
+            item {
+                Text(
+                    text = "ABOUT DEVELOPER",
+                    style = MaterialTheme.typography.labelMedium,
+                    fontWeight = FontWeight.Bold,
+                    color = ElectricCyan,
+                    letterSpacing = 1.sp
+                )
+                Spacer(modifier = Modifier.height(8.dp))
+                DeveloperProfileCard(
+                    onShowFullDialog = { showDeveloperDialog = true }
+                )
+            }
+
             // About Open Source Privacy Info
             item {
                 Card(
@@ -460,5 +482,9 @@ fun SettingsSheet(
                 Spacer(modifier = Modifier.height(24.dp))
             }
         }
+    }
+
+    if (showDeveloperDialog) {
+        AboutDeveloperDialog(onDismissRequest = { showDeveloperDialog = false })
     }
 }
