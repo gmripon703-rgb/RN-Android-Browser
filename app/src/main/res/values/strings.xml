@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Browser RN</string>
+    <string name="search_or_type_url">Search or enter address</string>
+    <string name="tab_count">%1$d</string>
+    <string name="shield_active">Shield Active</string>
+    <string name="shield_details">Privacy Shield Protection</string>
+    <string name="erase_history_title">Erase Browsing Data</string>
+    <string name="erase_history_desc">Tabs, cookies, cache and web storage cleared.</string>
+</resources>
