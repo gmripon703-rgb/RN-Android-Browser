@@ -15,7 +15,7 @@ enum class SearchEngine(val displayName: String, val searchUrl: String, val home
 enum class UserAgentOption(val label: String, val userAgentString: String) {
     STEALTH_MOBILE(
         "Stealth Mobile (Android)",
-        "Mozilla/5.0 (Linux; Android 14; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36 StealthNet/1.0"
+        "Mozilla/5.0 (Linux; Android 14; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36 BrowserRN/1.0"
     ),
     DESKTOP_LINUX(
         "Desktop (Linux / Firefox Focus)",

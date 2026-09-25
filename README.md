@@ -108,4 +108,4 @@ An ultra-lightweight, mobile-responsive, zero-telemetry Android web browser desi
 - **Privacy & DNS**: Encrypted DNS over HTTPS (DoH) via Cloudflare 1.1.1.1, Quad9, AdGuard
 - **VPN Tunnel**: Android `VpnService` with auto-generated open-source keys
 - **Local Persistence**: Room Database (for user bookmarks only, zero activity logging)
-- **Platform Compatibility**: Android 7.0+ (API 24+) through Android 15 & 16, Mobile, Tablets, Foldables, and Google/Android TV
+- **Platform Compatibility**: Android 6.0+ (API 23+) through Android 15 & 16, Mobile, Tablets, Foldables, and Google/Android TV

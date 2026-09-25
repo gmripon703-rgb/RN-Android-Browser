@@ -530,7 +530,7 @@ fun VpnTunnelSheet(
                             )
                             Spacer(modifier = Modifier.height(4.dp))
                             Text(
-                                text = "Standard internet providers log every website you resolve over unencrypted DNS port 53. StealthNet wraps every DNS query in TLS encryption (DoH) and tunnels web traffic directly to non-logging open-source resolvers, rendering your activity invisible to your ISP.",
+                                text = "Standard internet providers log every website you resolve over unencrypted DNS port 53. Browser RN wraps every DNS query in TLS encryption (DoH) and tunnels web traffic directly to non-logging open-source resolvers, rendering your activity invisible to your ISP.",
                                 style = MaterialTheme.typography.bodySmall,
                                 color = MaterialTheme.colorScheme.onSurfaceVariant,
                                 lineHeight = 18.sp
